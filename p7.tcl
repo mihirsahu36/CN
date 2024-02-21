@@ -1,7 +1,9 @@
-set ns [new Simulator] set tf [open lab8.tr w]
+#Implement simple ESS and with transmitting nodes in wire-less LAN by simulation and determine the throughput with respect to transmission of packets.
+
+set ns [new Simulator] set tf [open p7.tr w]
 $ns trace-all $tf
 set topo [new Topography]
-$topo load_flatgrid 1000 1000 set nf [open lab8.nam w]
+$topo load_flatgrid 1000 1000 set nf [open p7.nam w]
 $ns namtrace-all-wireless $nf 1000 1000
 $ns node-config -adhocRouting DSDV \
 -llType LL \
@@ -50,7 +52,7 @@ $ns at 100 "$n1 setdest 550 550 15"
 $ns at 190 "$n1 setdest 70 70 15" proc finish { } {
 global ns nf tf
 $ns flush-trace
-exec nam lab8.nam & close $tf
+exec nam p7.nam & close $tf
 exit 0
 }
 
