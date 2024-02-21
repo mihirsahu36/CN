@@ -1,3 +1,5 @@
+#Implement an Ethernet LAN using n nodes and set multiple traffic nodes and plot congestion window for different source / destination.
+
 set ns [new Simulator]
 set tf [open Prog3.tr w]
 $ns trace-all $tf
