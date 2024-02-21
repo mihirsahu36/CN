@@ -1,3 +1,5 @@
+//Write a program for error detecting code using CRC-CCITT (16- bits).
+
 import java.util.Scanner;
 public class CRC {
   public static void main(String[] args) {
