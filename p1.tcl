@@ -1,5 +1,7 @@
+#Implement three nodes point – to – point network with duplex links between them for different topologies. 
+#1Set the queue size, vary the bandwidth, and find the number of packets dropped for various iterations.
 #Simulate a three node point to point network with duplex links between them. Set queue size and vary the
-bandwidth and find number of packets dropped.
+#bandwidth and find number of packets dropped.
 
 set ns [new Simulator]
 set nf [open p1.nam w]
