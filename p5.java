@@ -1,3 +1,5 @@
+//Write a program for congestion control using leaky bucket algorithm.
+
 import java.util.Scanner;
 public class leaky {
 		public static void main(String [] args){
